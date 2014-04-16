@@ -1,0 +1,52 @@
+2014-04-16 06:20:11,698 - [INFO] - from play in pool-4-thread-4 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2014-04-16 06:20:43,960 - [DEBUG] - from application in play-internal-execution-context-1 
+Directory for migration files found. db/migration/default
+
+2014-04-16 06:20:44,704 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6i04nde66 - Internal server error, for (GET) [/] ->
+
+com.github.tototoshi.play2.flyway.InvalidDatabaseRevision: Database 'default' needs migration![An SQL script need to be run on your database.]
+	at com.github.tototoshi.play2.flyway.Plugin$$anonfun$com$github$tototoshi$play2$flyway$Plugin$$checkState$1.apply(Plugin.scala:84) ~[play-flyway_2.10-1.0.3.jar:1.0.3]
+	at com.github.tototoshi.play2.flyway.Plugin$$anonfun$com$github$tototoshi$play2$flyway$Plugin$$checkState$1.apply(Plugin.scala:81) ~[play-flyway_2.10-1.0.3.jar:1.0.3]
+	at scala.Option.foreach(Option.scala:236) ~[scala-library-2.10.3.jar:na]
+	at com.github.tototoshi.play2.flyway.Plugin.com$github$tototoshi$play2$flyway$Plugin$$checkState(Plugin.scala:81) ~[play-flyway_2.10-1.0.3.jar:1.0.3]
+	at com.github.tototoshi.play2.flyway.Plugin$$anonfun$onStart$1.apply(Plugin.scala:96) ~[play-flyway_2.10-1.0.3.jar:1.0.3]
+	at com.github.tototoshi.play2.flyway.Plugin$$anonfun$onStart$1.apply(Plugin.scala:92) ~[play-flyway_2.10-1.0.3.jar:1.0.3]
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.MapLike$DefaultKeySet.foreach(MapLike.scala:174) ~[scala-library-2.10.3.jar:na]
+	at com.github.tototoshi.play2.flyway.Plugin.onStart(Plugin.scala:92) ~[play-flyway_2.10-1.0.3.jar:1.0.3]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.2.jar:2.2.2]
+	at play.api.Play$$anonfun$start$1$$anonfun$apply$mcV$sp$1.apply(Play.scala:88) ~[play_2.10-2.2.2.jar:2.2.2]
+	at scala.collection.immutable.List.foreach(List.scala:318) ~[scala-library-2.10.3.jar:na]
+	at play.api.Play$$anonfun$start$1.apply$mcV$sp(Play.scala:88) ~[play_2.10-2.2.2.jar:2.2.2]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.2.jar:2.2.2]
+	at play.api.Play$$anonfun$start$1.apply(Play.scala:88) ~[play_2.10-2.2.2.jar:2.2.2]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:18) ~[play_2.10-2.2.2.jar:2.2.2]
+	at play.api.Play$.start(Play.scala:87) ~[play_2.10-2.2.2.jar:2.2.2]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:139) ~[play_2.10-2.2.2.jar:2.2.2]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1$$anonfun$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.2.jar:2.2.2]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.10.3.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:112) ~[play_2.10-2.2.2.jar:2.2.2]
+	at play.core.ReloadableApplication$$anonfun$get$1$$anonfun$apply$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.2.jar:2.2.2]
+	at scala.util.Success.flatMap(Try.scala:200) ~[scala-library-2.10.3.jar:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:110) ~[play_2.10-2.2.2.jar:2.2.2]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:102) ~[play_2.10-2.2.2.jar:2.2.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.10.3.jar:na]
+
+2014-04-16 06:21:18,311 - [DEBUG] - from application in play-internal-execution-context-1 
+Directory for migration files found. db/migration/default
+
+2014-04-16 06:21:19,398 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
